@@ -1,0 +1,16 @@
+<table class='table table-hover'>
+    <tr>
+        <td width='70px'>
+            {{ wtf.quick_form(compforms[task.id]) }}
+        </td>
+        <td>{{ task.task }}
+            <br> Created: {{ moment(task.timestamp).fromNow() }}
+            {% if task.deadline %}
+            Deadline: {{ moment(task.deadline).fromNow() }}
+            {% endif %}
+        </td>
+        <td width='70px'>
+            {{ wtf.quick_form(delforms[task.id]) }}
+        </td>
+    </tr>
+</table>
