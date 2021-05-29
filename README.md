@@ -1,5 +1,6 @@
 # To-Do List web app.
 Simple web-app done while waiting for another program to parse HTML-files :)
+<img src='example_screenshot.png'>
 
 ## Start on Linux
 ```bash
